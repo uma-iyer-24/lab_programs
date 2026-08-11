@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Calculate Marks</title>
+</head>
+<body style="text-align:center">
+    <h1>Admission Eligibility</h1>
+    <form onsubmit="return validateForm()">
+        <label>Student Name:</label>
+        <input type="text" id="stdname" name="stdname" required><br><br>
+
+        <label>Intermediate/12th Percentage:</label>
+        <input type="number" id="ip" name="ip"><br><br>
+
+        <label>EAMCET Rank:</label>
+        <input type="number" id="eam" name="eam" required><br><br>
+
+        <label>JEE Rank:</label>
+        <input type="number" id="jee" name="jee" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            let sname = document.getElementById("stdname").value;
+            let ip = Number(document.getElementById("ip").value);
+            let eam = Number(document.getElementById("eam").value);
+            let jee = Number(document.getElementById("jee").value);
+            
+            if((eam<=1000000 || jee<=1000000) && ip>80){
+                alert(`Eligible!`);
+            } else {
+                alert(`Nnot Eligible.`);
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>

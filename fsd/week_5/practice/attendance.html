@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Attendance Report</title>
+</head>
+<body style="text-align:center">
+    <h1>Attendance Form</h1>
+    <form onsubmit="return validateForm()">
+        <label>Student Roll No:</label>
+        <input type="text" id="stdname" name="stdname" required><br><br>
+
+        <label>Total Working Days:</label>
+        <input type="number" id="wd" name="wd"><br><br>
+
+        <label>Days Present:</label>
+        <input type="number" id="dp" name="dp" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            let sname = document.getElementById("stdname").value;
+            let wd = Number(document.getElementById("wd").value);
+            let dp = Number(document.getElementById("dp").value);
+            
+            let att = dp/wd * 100;
+
+            if(att>75){
+                alert(`Attendace: ${att}%\n Eligible for examination`);
+            } else {
+                alert(`Attendance ${att}%\n Not eligible for examination`);
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>

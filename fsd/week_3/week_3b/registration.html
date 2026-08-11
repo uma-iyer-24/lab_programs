@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body style="text-align:center">
+        <h1>Registration Form</h1>
+        <form onsubmit="return validateForm()">
+            <label>Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label>Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label>Date Of Birth:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male"> Male <br>
+            <input type="radio" name="gender" value="female"> Female <br>
+            <input type="radio" name="gender" value="other"> Other <br><br>
+
+            <label>Mail ID:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label>Contact Number:</label>
+            <input type="tel" id="number" name="number" required><br><br>
+
+            <label>Address:</label><br>
+            <textarea rows="4" cols="25"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <script>
+            function validateForm() {
+                let uname = document.getElementById("username").value;
+                let pw = document.getElementById("password").value;
+                let pno = document.getElementById("number").value;
+
+                let ur = /^[a-zA-Z]{3,}$/; 
+                let pr = /^(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*\d).{7,}$/; 
+                let pnr = /^[0-9]{10}$/; 
+
+                if (!ur.test(uname)) {
+                    alert("Username must contain only alphabets.");
+                    return false;
+                }
+
+                if (!pr.test(pw)) {
+                    alert("Password must be at least 7 characters long, include one uppercase letter, one number, and one special symbol.");
+                    return false;
+                }
+
+                if (!pnr.test(pno)) {
+                    alert("Contact number must be exactly 10 digits.");
+                    return false;
+                }
+
+                return true; 
+            }
+        </script>
+    </body>
+</html>
