@@ -1,0 +1,69 @@
+------------------------------------------------------------------------------------------------------------
+Week 1:
+1. a) Create a Web Page using HTML which contains a Heading, Image and 2 hyperlinks. Each
+hyperlink opens a new page in the same web browser. New page contains “Go Back” link that takes
+you to the main page.
+b) Write a HTML program to create a Registration form, which contains User Name, Password, Date
+of Birth, Gender, Mail-id, Contact number, Address and submit button.
+------------------------------------------------------------------------------------------------------------
+Week 2:
+2. a) Create a web page to demonstrate Position Property in CSS.
+b) Create a Newspaper Style Design to print minimum 2 articles using HTML and CSS.
+------------------------------------------------------------------------------------------------------------
+Week 3:
+3. a) Write a JavaScript program to change the background color after clicking “change color” button.
+b) Write a JavaScript program to validate registration page using regular expression.
+------------------------------------------------------------------------------------------------------------
+Week 4:
+4. a) Write a code to hide and show an element in a periodic interval without any action from the user
+using JQuery.
+b) Write a program to create and Build a star rating system using JQuery.
+------------------------------------------------------------------------------------------------------------
+Week 5:
+5. a) Write a program to demonstrate ReactJS Class and Instance.
+b) Write a program to create a basic calculator to perform arithmetic operations using ReactJS.
+------------------------------------------------------------------------------------------------------------
+Week 6:
+6. a) Demonstrate simple event handling examples using ReactJS.
+b) Write a program to create a simple voting application system using ReactJS.
+------------------------------------------------------------------------------------------------------------
+Week 7:
+7. a) Create a webpage to display “Hello World” using SERVLET.
+b) Implement a web application using SERVLET, which takes a name as input and on submitting it,
+shows a hello <name> page. It shows start time at the right top comer of the page and provides a
+logout button. On clicking logout button, it should show a logout page with Thank You <name>
+message with the duration of usage (hint: Use session to store name and time).
+------------------------------------------------------------------------------------------------------------
+Week 8:
+8. a) Write a JSP program to find a factorial of the given number.
+b) Create a user validation web application using JSP, where the user submits the login name and
+password to the server. The name and password are checked against the data already available in
+database and if the data matches, a successful login page is returned. Otherwise show a failure
+message to the user.
+------------------------------------------------------------------------------------------------------------
+Week 9:
+9. a) Demonstrate a simple example of Spring web MVC framework.
+b) Illustrate how the database is connected in Spring Framework by using a simple CRUD application.
+------------------------------------------------------------------------------------------------------------
+Week 10:
+10. a) create a simple example of a hibernate application using eclipse IDE.
+b) Create an application to demonstrate Hibernate Query Language.
+------------------------------------------------------------------------------------------------------------
+Week 11 and 12:
+CASE STUDY-1: Create a Chat module/Interface using HTML CSS and JavaScript. The chat
+interface primarily consists of two segments: the message header and the chat box.
+Message-Header- The message header resides at the top of the chat box. It includes the user's name,
+avatar or profile image, and the user's last seen. Last seen is the last time the user was active.
+The Chat-Box- The chat box consists of the message page and the message bottom sections.
+● Message page-The message page consists of incoming and outgoing messages, as well as the
+avatars of the senders. It also displays the time at which each message is sent.
+● The Message-Bottom-This section contains an input field where the user can type in the
+messages and a send button to send them.
+------------------------------------------------------------------------------------------------------------
+Week 13 and 14:
+CASE STUDY-2: Create an online learning platform that uses React JS for its frontend development.
+Reacts modular architecture allows it to build reusable UI components for course listings, interactive
+quizzes, and user dashboards. MySQL serves as the database system for storing user profiles, course
+data, and learning progress. On the backend, the Spring Framework, specifically Spring MVC
+architecture, to handle server-side logic, user authentication, and course enrollment management. 
+------------------------------------------------------------------------------------------------------------
