@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body style="text-align:center">
+    <h1>Registration Form</h1>
+    <form onsubmit="return validateForm()">
+        <label>Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label>Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            let uname = document.getElementById("username").value;
+            let pw = document.getElementById("password").value;
+
+            let ur = /^[a-zA-Z]{3,}$/; 
+            let pr = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*(),.?":{}|<>]).{8,}$/;
+
+            if (!ur.test(uname)) {
+                alert("Username must contain only alphabets.");
+                return false;
+            }
+
+            if (!pr.test(pw)) {
+                alert("Password must be at least 8 characters long, include one uppercase letter, one lowercase letter, and one special symbol.");
+                return false;
+            }
+
+            alert("Submission Successful");
+
+            return true; 
+        }
+    </script>
+</body>
+</html>

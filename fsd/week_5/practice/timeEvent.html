@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body style="background-color:rgb(149, 84, 155); text-align: center; font-family: Arial;">
+        <header>
+            <h4>Timing Events</h4>
+        </header>
+        <button onclick="startDemo()">Start Timing Demo</button>
+        <p id="message" style="font-weight: bold; color: rgb(139, 0, 132); margin-top: 20px;">No timer started yet.</p>
+        <script>
+            const message = document.getElementById('message');
+            function startDemo() {
+                message.textContent = 'Timer started...';
+                
+                const intervalId = setInterval(function () {
+                    message.textContent = 'setInterval is running...';
+                }, 1000);
+                setTimeout(function () {
+                    clearInterval(intervalId);
+                    message.textContent = 'setInterval stopped after 5 seconds';
+                }, 5000);
+            }
+        </script>
+    </body>
+</html>
