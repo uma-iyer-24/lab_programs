@@ -1,4 +1,4 @@
-# Web Technology Lab
+# Full Stack Development Lab
 
 ## Week 1
 
