@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Change Color</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("h1").mouseover(function () {
+                $(this).css("color", "lightgreen");
+            });
+            $("h1").mouseout(function () {
+                $(this).css("color", "black");
+            });
+        });
+    </script>
+</head>
+<body style="text-align:center">
+    <h1>Move your mouse over this heading</h1>
+</body>
+</html>
+

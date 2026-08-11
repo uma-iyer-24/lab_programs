@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Change Font Size and Color</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $(".text").css({
+                    "font-size": "25px",
+                    "color": "lightgreen"
+                });
+            });
+        });
+    </script>
+</head>
+<body style="text-align:center">
+    <p class="text">I will change when you click the button.</p>
+    <button id="btn">Change Style</button>
+</body>
+</html>

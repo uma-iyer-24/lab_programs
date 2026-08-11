@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Login Validation</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#login").click(function () {
+                let username = $("#username").val();
+                let password = $("#password").val();
+                if (username == "") {
+                    $("#message").text("Please enter your username.");
+                }
+                else if (password == "") {
+                    $("#message").text("Please enter your password.");
+                }
+                else if(username == "umaiyer" && password == "password123"){
+                    $("#message").text("Login successful!");
+                }
+                else {
+                    $("#message").text("Incorrect Username/Password.");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body style="text-align:center">
+    <h2>Login Form</h2>
+    <label>Username:</label>
+    <input type="text" id="username">
+    <br><br>
+    
+    <label>Password:</label>
+    <input type="password" id="password">
+    <br><br>
+
+    <button id="login">Login</button>
+
+    <p id="message"></p>
+
+</body>
+</html>

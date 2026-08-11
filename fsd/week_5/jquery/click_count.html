@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Button Click Counter</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let count = 0;
+            $("#btn").click(function () {
+                count++;
+                $("#result").text("Button clicked: " + count + " times");
+            });
+        });
+    </script>
+</head>
+<body style="text-align:center">
+    <button id="btn">Click Me</button>
+    <h2 id="result">Button clicked: 0 times</h2>
+</body>
+</html>

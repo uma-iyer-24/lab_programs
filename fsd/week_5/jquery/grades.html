@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Calculate Marks</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script>
+        $(document).ready(function(){
+            $("#calc").click(function(){
+                let s1 = parseInt($("#s1").val());
+                let s2 = parseInt($("#s2").val());
+                let s3 = parseInt($("#s3").val());
+
+                let total = s1+s2+s3;
+                $("#grade").text("Total: "+total);
+
+            })
+        })
+    </script>
+</head>
+<body style="text-align:center">
+        <label for="s1">Subject 1:</label>
+        <input type="number" id="s1" name="s1"><br><br>
+
+        <label for="s2">Subject 2:</label>
+        <input type="number" id="s2" name="s2" required><br><br>
+
+        <label for="s3">Subject 3:</label>
+        <input type="number" id="s3" name="s3" required><br><br>
+
+        <button id="calc">Calculate</button>
+        <h1 id="grade"></h1>
+</body>
+</html>
+

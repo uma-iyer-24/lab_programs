@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Display name 2</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script>
+        $(document).ready(function(){
+            $("#show").click(function(){
+                let name = $("#sname").val();
+                $("#disp").text(name);
+            })
+        })
+    </script>
+</head>
+<body style="text-align:center">
+    <label>Enter your name</label>
+    <input type="text" id = "sname">
+    <h1 id="disp"></h1>
+    <button id = "show">Click me to display name</button>
+</body>
+</html>
